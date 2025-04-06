@@ -202,7 +202,7 @@ export default function DatingApp() {
       <div className="flex-1 flex flex-col relative">
         {/* Profile card */}
         <div className="flex-1 flex items-center justify-center p-4">
-          <div className="relative w-full max-w-md h-[80vh] bg-gray-900 rounded-xl overflow-hidden">
+          <div className="relative w-full max-w-md h-[66vh] bg-gray-900 rounded-xl overflow-hidden">
             {/* Image slider */}
             <div className="relative h-full">
               <div
