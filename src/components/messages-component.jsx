@@ -82,7 +82,7 @@ const conversations = [
 ]
 
 export default function MessagesComponent() {
-  const [activeConversation, setActiveConversation] = useState<number | null>(1)
+  const [activeConversation, setActiveConversation] = useState(1)
   const [messageText, setMessageText] = useState("")
   const [conversationList, setConversationList] = useState(conversations)
 
