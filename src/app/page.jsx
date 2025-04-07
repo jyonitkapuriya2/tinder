@@ -211,23 +211,23 @@ export default function SwipeableDatingApp() {
     <>
       <div className="bg-gradient-to-r from-rose-500 to-rose-600 p-4 flex items-center gap-4">
         <div className="flex items-center gap-2">
-          <div className="relative">
+          <div className="relative w-10 h-10">
             <Image
               src="/profile.jpg"
               alt="Your profile"
               width={40}
               height={40}
-              className="rounded-full border-2 border-white"
+              className="rounded-full border-2 border-white "
             />
           </div>
           <span className="font-medium">You</span>
         </div>
         <div className="flex gap-3 ml-auto">
           <Button variant="ghost" size="icon" className="rounded-full bg-white/10 hover:bg-white/20">
-            <Zap className="h-5 w-5" />
+            <Zap className="h-5 w-5 text-white" />
           </Button>
           <Button variant="ghost" size="icon" className="rounded-full bg-white/10 hover:bg-white/20">
-            <div className="relative">
+            <div className="relative text-white">
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-rose-500 rounded-full" />
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="4" y="4" width="7" height="7" rx="1" stroke="currentColor" strokeWidth="2" />
@@ -238,10 +238,10 @@ export default function SwipeableDatingApp() {
             </div>
           </Button>
           <Button variant="ghost" size="icon" className="rounded-full bg-white/10 hover:bg-white/20">
-            <Briefcase className="h-5 w-5" />
+            <Briefcase className="h-5 w-5 text-white" />
           </Button>
           <Button variant="ghost" size="icon" className="rounded-full bg-white/10 hover:bg-white/20">
-            <Shield className="h-5 w-5" />
+            <Shield className="h-5 w-5 text-white" />
           </Button>
         </div>
       </div>
@@ -250,8 +250,8 @@ export default function SwipeableDatingApp() {
         <button
           onClick={() => setActiveTab("matches")}
           className={cn(
-            "flex-1 text-center py-4",
-            activeTab === "matches" ? "border-b-2 border-rose-500 font-medium" : "text-gray-400",
+            "flex-1 text-center py-4 text-white",
+            activeTab === "matches" ? "border-b-2 border-rose-500 font-medium" : "text-white",
           )}
         >
           Matches
@@ -259,8 +259,8 @@ export default function SwipeableDatingApp() {
         <button
           onClick={() => setActiveTab("messages")}
           className={cn(
-            "flex-1 text-center py-4",
-            activeTab === "messages" ? "border-b-2 border-rose-500 font-medium" : "text-gray-400",
+            "flex-1 text-center py-4 text-white",
+            activeTab === "messages" ? "border-b-2 border-rose-500 font-medium" : "text-white",
           )}
         >
           Messages
@@ -288,7 +288,7 @@ export default function SwipeableDatingApp() {
               <div key={i} className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-800">
                 <div className="relative">
                   <Image
-                    src={`/placeholder.svg?height=50&width=50`}
+                    src={`/nidhi1.jpg`}
                     alt="Profile"
                     width={40}
                     height={40}
@@ -298,7 +298,7 @@ export default function SwipeableDatingApp() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex justify-between">
-                    <p className="font-medium">User {i}</p>
+                    <p className="font-medium text-white">User {i}</p>
                     <span className="text-xs text-gray-400">2h</span>
                   </div>
                   <p className="text-sm text-gray-400 truncate">Hey there! How are you?</p>
@@ -314,7 +314,7 @@ export default function SwipeableDatingApp() {
   return (
     <div className="flex h-screen bg-black overflow-scroll text-white">
       {/* Desktop Sidebar */}
-      <div className="w-full max-w-[320px] hidden lg:flex flex-col border-r border-gray-800">
+      <div className="w-full max-w-[360px] hidden lg:flex flex-col border-r border-gray-800">
         <SidebarContent />
       </div>
 
@@ -326,7 +326,7 @@ export default function SwipeableDatingApp() {
               <Menu className="h-5 w-5" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="p-0 w-[280px] bg-black border-r border-gray-800">
+          <SheetContent side="left" className="p-0 w-full bg-black border-r border-gray-800">
             <div className="h-full overflow-auto">
               <SidebarContent />
             </div>
